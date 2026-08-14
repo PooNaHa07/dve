@@ -1,0 +1,12 @@
+Order Deny,Allow
+Deny from all
+
+# Allow access to sync_db_structure.php specifically
+<Files "sync_db_structure.php">
+    Order Allow,Deny
+    Allow from all
+    <IfModule mod_authz_core.c>
+        Require all granted
+    </IfModule>
+</Files>
+

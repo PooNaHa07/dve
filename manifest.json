@@ -1,0 +1,22 @@
+{
+  "name": "DVE WORK HUB - ระบบทวิภาคี วิทยาลัยอาชีวศึกษาเพชรบุรี",
+  "short_name": "DVE WORK HUB",
+  "description": "ระบบบันทึกรายงานการปฏิบัติงานทวิภาคี (DVE) ของวิทยาลัยอาชีวศึกษาเพชรบุรี",
+  "start_url": "/DVE_DATA_FULL/index.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/DVE_DATA_FULL/assets/img/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/DVE_DATA_FULL/assets/img/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

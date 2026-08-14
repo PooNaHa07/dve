@@ -1,0 +1,433 @@
+/**
+ * ✨ Ultra-Premium Teacher Portal Stylesheet
+ * Modern Design System with Soft Glass, Floating Physics, and Harmonic Gradients.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --tch-primary: #4361ee;
+    --tch-secondary: #3f37c9;
+    --tch-accent: #4cc9f0;
+    --tch-gradient: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+    --tch-gradient-hover: linear-gradient(135deg, #4895ef 0%, #560bad 100%);
+    --tch-soft-blue: rgba(67, 97, 238, 0.08);
+    --tch-bg-body: #f4f7fb;
+    --tch-border: #e9ecef;
+    
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.04);
+    --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01);
+    --shadow-lg: 0 20px 40px -12px rgba(67, 97, 238, 0.12);
+    
+    --tch-radius: 16px;
+    --tch-radius-sm: 10px;
+}
+
+/* 🎯 Global Smooth Experience */
+html { scroll-behavior: smooth; }
+body {
+    background: radial-gradient(circle at top right, #ffffff 0%, #f4f7fb 70%) !important;
+    font-family: 'Prompt', 'Inter', sans-serif;
+    color: #2d3748;
+    letter-spacing: -0.01em;
+}
+
+/* Stylish Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #c7d2fe;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #818cf8;
+}
+
+/* 🎇 Layout Layer & Animations */
+.teacher-page-container {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    animation: ultraSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes ultraSlideUp {
+    0% { opacity: 0; transform: translateY(30px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* 💎 Premium Layout - Header */
+.page-header-wrapper {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.page-header-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #1e293b;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.page-header-title .icon-box {
+    width: 52px;
+    height: 52px;
+    background: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md), inset 0 0 0 1px rgba(255,255,255,0.6);
+    font-size: 1.5rem;
+    border: 1px solid rgba(67,97,238,0.1);
+    transition: all 0.3s ease;
+}
+
+.page-header-title:hover .icon-box {
+    transform: rotate(5deg) scale(1.05);
+    border-color: rgba(67,97,238,0.3);
+}
+
+/* 🔄 Navigation Controls */
+.btn-back-circle {
+    width: 46px;
+    height: 46px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    text-decoration: none !important;
+}
+
+.btn-back-circle:hover {
+    background: #f8fafc;
+    color: var(--tch-primary);
+    transform: translateX(-4px);
+    box-shadow: 0 4px 15px rgba(67,97,238,0.12);
+    border-color: var(--tch-primary);
+}
+
+/* 🌠 High-Quality Action Buttons */
+.btn-tch-gradient {
+    background: var(--tch-gradient);
+    background-size: 200% auto;
+    color: #ffffff !important;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-weight: 600;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 20px -4px rgba(67, 97, 238, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-tch-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -4px rgba(67, 97, 238, 0.5);
+    background-position: right center;
+}
+
+.btn-tch-gradient:active {
+    transform: translateY(-1px);
+}
+
+/* 🃏 Ultra Cards System */
+.premium-card {
+    background: #ffffff;
+    border-radius: var(--tch-radius);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    box-shadow: var(--shadow-md);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.premium-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.premium-card-header {
+    background: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+/* 📊 Next-Gen Data Tables */
+.table-tch {
+    width: 100%;
+}
+
+.table-tch thead th {
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table-tch tbody td {
+    padding: 1.1rem 1.5rem;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.2s ease;
+    vertical-align: middle;
+}
+
+.table-tch tbody tr {
+    transition: all 0.2s;
+}
+
+.table-tch tbody tr:hover td {
+    background: rgba(241, 245, 249, 0.5);
+}
+
+/* 🎭 Input & Form Excellence */
+.form-control, .form-select {
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    font-size: 0.95rem;
+    background-color: #fcfcfd;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #fff;
+    border-color: var(--tch-primary);
+    box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.15);
+    outline: none;
+}
+
+/* 🎨 Visual Pill Badges */
+.badge-custom {
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 6px 16px;
+    letter-spacing: 0.3px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.badge-primary-soft { background: #eef2ff; color: #4338ca; border: 1px solid rgba(67, 97, 238, 0.1); }
+.badge-success-soft { background: #ecfdf5; color: #059669; border: 1px solid rgba(16, 185, 129, 0.1); }
+.badge-warning-soft { background: #fffbeb; color: #d97706; border: 1px solid rgba(245, 158, 11, 0.1); }
+.badge-danger-soft { background: #fef2f2; color: #dc2626; border: 1px solid rgba(220, 38, 38, 0.1); }
+.badge-info-soft { background: #f0f9ff; color: #0284c7; border: 1px solid rgba(2, 132, 199, 0.1); }
+
+/* ✨ Utilities */
+.icon-gradient {
+    background: var(--tch-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.border-primary-light {
+    border-color: rgba(67, 97, 238, 0.2) !important;
+}
+
+/* Smart Custom Interactions for Cards in Forms */
+.classroom-check-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease !important;
+    border: 1px solid #e2e8f0 !important;
+    padding-right: 2.5rem !important; /* Reserve space for the absolute checkmark icon */
+}
+
+.classroom-check-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--tch-primary) !important;
+    box-shadow: 0 10px 20px -5px rgba(67, 97, 238, 0.1) !important;
+}
+
+.classroom-check-input:checked + .classroom-check-card {
+    background: #eff6ff !important;
+    border-color: var(--tch-primary) !important;
+    border-width: 2px !important;
+}
+
+.classroom-check-input:checked + .classroom-check-card::after {
+    content: "✓";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background: var(--tch-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DataTables Refinements */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: var(--tch-gradient) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 20px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #cbd5e1 !important;
+}
+
+/* 📱 Advanced Mobile Scaling & Optimization (Refined for Peak Performance) */
+@media (max-width: 768px) {
+    .teacher-page-container {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .page-header-wrapper {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .page-header-title {
+        font-size: 1.3rem;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .page-header-title .icon-box {
+        width: 44px;
+        height: 44px;
+        font-size: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .btn-tch-gradient {
+        width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1.25rem;
+    }
+
+    .premium-card-header {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .table-tch thead th {
+        padding: 0.75rem 0.75rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .table-tch tbody td {
+        padding: 0.85rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .badge-custom {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    /* Force clear column fixed pixel constraints on mobile if set inline */
+    th[style*="width"], td[style*="width"] {
+        width: auto !important;
+        min-width: 80px;
+    }
+
+    /* Dashboard specifics inside teacher.php */
+    .dashboard-hero-wrapper {
+        padding: 1.5rem !important;
+        border-radius: 18px !important;
+    }
+
+    .hero-title {
+        font-size: 1.35rem !important;
+    }
+
+    .tch-stat-box {
+        padding: 1rem !important;
+    }
+
+    .stat-circle-icon {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 1.3rem !important;
+    }
+
+    .stat-big-num {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .tch-menu-tile {
+        padding: 1rem 0.5rem !important;
+    }
+    
+    .tch-menu-tile .menu-icn-wrap {
+        width: 52px !important;
+        height: 52px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 0.6rem !important;
+    }
+    
+    .tch-menu-tile .m-title {
+        font-size: 0.88rem !important;
+    }
+
+    .tch-menu-tile .m-sub {
+        display: none; /* Hide long subtitle descriptions on tiny screens to keep compact grids */
+    }
+    
+    /* Better inline horizontal tables view on ultra-compact screens */
+    .table-responsive {
+        border-radius: 8px;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+    }
+    
+    .table-tch thead th {
+        white-space: nowrap;
+    }
+}
+
+/* Utility to visually isolate sticky headers or distinct overflow for smooth scrolling */
+.table-responsive::-webkit-scrollbar {
+    height: 5px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 4px;
+}
+

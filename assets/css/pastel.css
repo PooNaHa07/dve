@@ -1,0 +1,5 @@
+/* pastel.css */
+body { background: linear-gradient(180deg,#fffaf0,#f0f7ff); font-family: Arial, sans-serif; }
+.pastel-card { background: rgba(255,255,255,0.9); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.btn-pastel { background:#9BD3C9; border-color:#9BD3C9; color:#04373b; }
+.navbar.pastel-nav { background: rgba(255,255,255,0.9); border-radius:8px; padding:10px; margin-bottom:20px;}
